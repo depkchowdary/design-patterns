@@ -4,7 +4,7 @@ and funtions are called where ever needed */
 var todoRepo = function(){
     var baseUrl = "https://mockapi.com/tasks"
     var get = function (id) {
-        console.log("getting task with " + id)
+        console.log("getting task with " + id + "from db")
         return {
             name: "walk out the dog",
             description: "walk peppa out"
@@ -19,4 +19,4 @@ var todoRepo = function(){
     }
 }
 
-module.exports = todoRepo();
+module.exports = todoRepo;

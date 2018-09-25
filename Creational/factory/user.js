@@ -6,10 +6,9 @@ var User = function(data){
 
 
 //user prototype
-User.prototype.fullName = function(...args){
-    return args.reduce((previous, current) => {
-        return previous + ' ' + current
-    })
+User.prototype.fullName = function(){
+    return this.firstName + ' '+ this.lastName 
 }
 
 
+module.exports = User

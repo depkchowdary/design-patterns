@@ -4,7 +4,7 @@ and funtions are called where ever needed */
 var userRepo = function () {
     var baseUrl = "https://mockapi.com/users"
     var get = function (id) {
-        console.log("getting task with " + id)
+        console.log("getting user with " + id+ "from db")
         return {
             firstName: "Deepak",
             lastName: "Tatineni",
@@ -20,4 +20,4 @@ var userRepo = function () {
     }
 }
 
-module.exports = userRepo();
+module.exports = userRepo;

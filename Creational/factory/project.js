@@ -9,6 +9,9 @@ Project.prototype.brief = function(project){
 }
 
 Project.prototype.addTask = function(task){
-    console.log(`adding ${task.name} to ${this.title} task`)
+    console.log(`adding ${task.name} to ${this.title} project`)
+    this.tasks.push(task)
     
 }
+
+module.exports = Project

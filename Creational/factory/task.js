@@ -1,10 +1,10 @@
-var repo = require('./taskRepository')
+var repo = require('./taskRepository')();
 
 var Todo = function (data) {
     this.name = data.name
     this.description = data.description
     this.completed = false
-    this.user = data.user || []
+    this.users =  []
 }
 
 Todo.prototype.complete = function () {
@@ -19,8 +19,9 @@ Todo.prototype.save = function () {
 }
 
 Todo.prototype.addUser = function(user){
-    console.log('added' + ' '+ user.fullname()+ 'to task'+ ' '+ this.name )
+    console.log('added' + ' '+ user.fullName()+ 'to task'+ ' '+ this.name )
     repo.save(this)
+    this.users.push(user)
 }
 
 module.exports = Todo
