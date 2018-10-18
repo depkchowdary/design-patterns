@@ -1,5 +1,4 @@
 /* Decarator design patterns lets you decarate the certain special objects with extra features(Methods and properties) 
-
 With the disadvantage from simple decaration, below solution can be implemented. This is called prototypical inheritance.
 */
 
@@ -32,13 +31,19 @@ var urgentTask = function(name, description, priority){
 //Urgent task prototype
 urgentTask.prototype = Object.create(Task.prototype)
 
+urgentTask.prototype.notify = function(){
+    console.log("Calling notify service")
+}
+
 urgentTask.prototype.save = function () {
     console.log("Doing special stuff before saving task " + this.name)
+    this.notify()
     Task.prototype.save.call(this)
 } 
 
 var ut = new urgentTask("pick up milk", "A urgent task to pickup milk", 1)
-
+ut.complete();
+/* completing task pick up milk */
 ut.save()
 /* Doing special stuff before saving task pick up milk
 saving task pick up milk */
