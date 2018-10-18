@@ -66,10 +66,12 @@ var TaskServiceWrapper = function(){
 
 TaskServiceWrapper.completeAndNotify(task1)
 
-/* Obviously, this can be combined with module pattern to hide the core functionality of the underlying function using a service wrapper layer */
-
 /* Task: A test task is completed
 Task: A test task is completed on Thu Oct 18 2018 21:30:19 GMT+0530 (India Standard Time)
 Notifying that Task: A test task is completed by Deep
 saving task: A test task */
+
+/* Obviously, this can be combined with module pattern to hide the core functionality of the underlying function using a service wrapper layer */
+
+
 
