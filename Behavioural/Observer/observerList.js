@@ -1,3 +1,5 @@
+/* Core func for observerList */
+
 function ObserverList() {
     this.observerList = [];
 }

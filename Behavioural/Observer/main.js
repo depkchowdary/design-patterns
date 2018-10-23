@@ -1,3 +1,5 @@
+/* Main.js */
+
 var [NotificationService, LoggingService, AuditingService] = require('./services')
 var ObservableTask = require('./subject')
 

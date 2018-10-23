@@ -1,3 +1,5 @@
+/* A decorator for task object  */
+
 var ObserverList = require('./observerList')
 var Task = require('./task')
 

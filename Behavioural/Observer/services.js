@@ -1,3 +1,5 @@
+/* Bunch of placeholder observers */
+
 var NotificationService = function () {
 var message = "Notifying";
 this.update = function (task) {
